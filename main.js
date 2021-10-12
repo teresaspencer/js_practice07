@@ -49,7 +49,7 @@ const actors = [
 // that accepts companyName as a parameter and returns
 // the name of the founder.
 
-// 6) Utlizing the same techCompanies object from #5,
+// 6) Utilizing the same techCompanies object from #5,
 // Create a function named storeFounders that accepts
 // an object and loops through the values. Store the
 // name of each founder in a new array that is returned
