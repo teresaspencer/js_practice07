@@ -8,6 +8,11 @@ given in the comments.
 // 1) Create an object named webDev that cannot be reassigned and
 // contains the 3 key-value pairs:
 // frame: "HTML", style: "CSS", logic: "JavaScript"
+const webDev = {
+  frame: "HTML",
+  style: "CSS",
+  logic: "JavaScript"
+};
 
 // 2) Create an object named pizza with a property named crust.
 // Set the crust value to "thin". Add a method named setCrust
@@ -15,10 +20,21 @@ given in the comments.
 // The method should change the crust value of the object to
 // the value of the parameter.
 // Hint: keyword to use is "this".
+const pizza = {
+  crust: "thin",
+  setCrust(crustType) {
+  this.crust = crustType;
+  }
+};
+
 
 // 3) Create a function named doesItContain that accepts two
 // parameters: "key" and "obj". The function should return
 // boolean data to indicate if the key exists in the object.
+function doesItContain(key, obj) {
+  if (obj == null) return false;
+  return key in obj;
+}
 
 // 4) Create a function named introduceTheActors that accepts
 // the array of objects named actors (see below) as a parameter.
@@ -40,6 +56,9 @@ const actors = [
   { name: "Jeff", movie: "The Big Lebowski" }
 ];
 ///////// Do not change the above array of objects /////////
+function introduceTheActors(actorArray) {
+  
+}
 
 // 5) Create an object named techCompanies that has the following
 // key-value pairs:
