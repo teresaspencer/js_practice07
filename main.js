@@ -57,7 +57,7 @@ const actors = [
 ];
 ///////// Do not change the above array of objects /////////
 function introduceTheActors(actorArray) {
-  
+  return actorArray.map(actor => `Hi, I'm ${actor.name} and I was in ${actor.movie}.`)
 }
 
 // 5) Create an object named techCompanies that has the following
@@ -67,6 +67,17 @@ function introduceTheActors(actorArray) {
 // Add a method to the techCompanies object named founderLookup
 // that accepts companyName as a parameter and returns
 // the name of the founder.
+const techCompanies = {
+  Microsoft: "Bill Gates",
+  Amazon: "Jeff Bezos",
+  Tesla: "Elon Musk",
+  Facebook: "Mark Zuckerberg",
+  Apple: "Steve Jobs",
+
+  founderLookup(companyName) {
+    return this[companyName];
+  }
+}
 
 // 6) Utilizing the same techCompanies object from #5,
 // Create a function named storeFounders that accepts
